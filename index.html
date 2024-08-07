@@ -11,17 +11,19 @@
     <h1>Etch-A-Sketch</h1>
     <div class='header'>
         <h6>Select the size</h6>
-        <button id="'pop" class="btn btn-danger">Select</button>
+        <button id="popup" class="btn btn-danger">Select</button>
     </div>
+
+    <p id="message">...</p>
 
     <div class="theContainer">
 
     </div>
 
     <div class="footer">
-        <button class="btn btn-dark">Black</button>
-        <button class="btn btn-primary">Random</button>
-        <button class="btn btn-warning">Reset</button>
+        <button class="btn btn-dark" onclick='setColor("black")'>Black</button>
+        <button class="btn btn-primary" onclick='setColor("random")'>Random</button>
+        <button class="btn btn-warning" onclick="resetGrid()">Reset</button>
     </div>
 
 
